@@ -1,0 +1,198 @@
+body{
+    margin:0;
+    padding:0;
+    color:#ffffff;
+}
+
+.background-wrap {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+}
+
+#Nixely {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-height: 100%;
+  min-width: 100%;
+}
+
+.hint {
+	z-index: 1;
+	color: #bc13fe;
+	mix-blend-mode: overlay;
+	position: fixed;
+	bottom: 2.75vmin;
+	font-size: 2.75vmin;
+	letter-spacing: 0.2vmin;
+	font-weight: bold;
+  font-family: 'Orbitron';
+  margin-left: 755px;
+  margin-bottom: 150px;
+}
+
+.content {
+  position: absolute;
+  width: 100%;
+  min-height: 100%;
+  z-index: 1000;
+  z-index: 1;
+}
+
+hr {
+  position: relative;
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+    background-attachment: fixed;
+    border-top: 6px solid transparent;
+    border-image: linear-gradient(90deg, #4632f0, #eb055a) 1;
+    z-index: 1;
+}
+
+
+.glitch{
+    position:relative;
+    top:40%;
+    margin:0 auto;
+    color:#ffff;
+    font-size:80px;
+    font-family:verdana;
+    font-weight:600;
+    text-align:center;
+    text-transform: uppercase;
+    z-index: 1;
+}
+
+.glitch::before, .glitch::after{
+    content:'NEVER';
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    overflow:hidden;
+    background-color:#0000;
+    color: #ffffff;
+    z-index: 1;
+
+}
+
+.glitch:before{
+    left:8px;
+    text-shadow:2px 0 #00ffea;
+    animation:effect 3s infinite linear;
+    z-index: 1;
+}
+.glitch:after{
+    left:4px;
+    text-shadow:-2px 0 #00ffea;
+    animation:effect 2s infinite linear;
+    z-index: 1;
+}
+@-webkit-keyframes effect{
+    0%{
+        clip:rect(55px,9999px,56px,0);
+    }
+    5%{
+        clip:rect(47px,9999px,38px,0);
+    }
+    10%{
+        clip:rect(33px,9999px,36px,0);
+    }
+    15%{
+        clip:rect(35px,9999px,9px,0);
+    }
+    20%{
+        clip:rect(63px,9999px,59px,0);
+    }
+    25%{
+        clip:rect(96px,9999px,98px,0);
+    }
+    30%{
+        clip:rect(48px,9999px,77px,0);
+    }
+    35%{
+        clip:rect(50px,9999px,34px,0);
+    }
+    40%{
+        clip:rect(60px,9999px,72px,0);
+    }
+    45%{
+        clip:rect(10px,9999px,81px,0);
+    }
+    50%{
+        clip:rect(2px,9999px,60px,0);
+    }
+    55%{
+        clip:rect(23px,9999px,89px,0);
+    }
+    60%{
+        clip:rect(76px,9999px,91px,0);
+    }
+    65%{
+        clip:rect(62px,9999px,38px,0);
+    }
+    70%{
+        clip:rect(60px,9999px,73px,0);
+    }
+    75%{
+        clip:rect(60px,9999px,87px,0);
+    }
+    80%{
+        clip:rect(2px,9999px,14px,0);
+    }
+    85%{
+        clip:rect(28px,9999px,87px,0);
+    }
+    90%{
+        clip:rect(73px,9999px,50px,0);
+    }
+    95%{
+        clip:rect(79px,9999px,78px,0);
+    }
+    100%{
+        clip:rect(17px,9999px,79px,0);
+    }
+}
+
+canvas {
+  width: 91vmin;
+  height: 13vmin;
+  color: #fff;
+}
+
+a {
+  transition: all 300ms; -webkit-transition: all 300ms; -moz-transition: all 300ms; -o-transition: all 300ms;
+}
+
+ul {
+  float: left
+}
+
+ul li {
+  float: left;
+  list-style: none;
+  position: relative;
+  margin-left: 225px;
+}
+
+ul li a {
+  display: block;
+  font-family: 'Orbitron';
+  color: #bc13fe;
+  font-size: 40px;
+  padding: 22px 14px;
+  text-decoration: none;
+}
+
+ul li a:hover {
+  transform: scale(1.1);
+-webkit-transform: scale(1.1);
+-moz-transform: scale(1.1);
+-o-transform: scale(1.1);
+  box-shadow: 5px 5px 5px 5px #bc13fe;
+}
